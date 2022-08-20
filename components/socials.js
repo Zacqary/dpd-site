@@ -7,6 +7,7 @@ import youtubeIcon from '../public/img/youtube.webp';
 import instagramIcon from '../public/img/instagram.webp';
 import twitterIcon from '../public/img/twitter.webp';
 import facebookIcon from '../public/img/facebook.webp';
+import say10Icon from '../public/img/say10.webp';
 
 export default function Socials({ className, hideNonMusic = false }) {
   return (
@@ -36,6 +37,9 @@ export default function Socials({ className, hideNonMusic = false }) {
           </a>
           <a href="https://www.facebook.com/dogparkdissidents" target="_new">
             <Image alt="Facebook" src={facebookIcon} height={60} width={60} />
+          </a>
+          <a href="https://www.say-10.com" target="_new">
+            <Image alt="Say-10 Records" src={say10Icon} height={60} width={60} />
           </a>
         </>
       )}
