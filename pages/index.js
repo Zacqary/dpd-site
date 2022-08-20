@@ -196,10 +196,10 @@ export default function Home({ hash }) {
                 </p>
                 <a
                   className={styles.buttonLink}
-                  href="https://www.say-10.com/store/never-erased-compilation/"
+                  href="https://dyingscene.com/ds-exclusive-never-erased-compilation-from-say-10-records/"
                   target="_new"
                 >
-                  Listen & Order
+                  Listen &amp; Order
                 </a>
               </column>
             </div>
