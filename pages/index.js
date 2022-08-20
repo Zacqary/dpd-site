@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
+import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import Image from 'next/future/image';
 import Script from 'next/script';
@@ -88,6 +89,36 @@ export default function Home({ hash }) {
 
   return (
     <div className={styles.home}>
+      <NextSeo
+        title="Dog Park Dissidents"
+        description="Queer punk rock in puppy hoods from New Orleans, Long Island, and Philadelphia"
+        canonical="https://www.dogparkdissidents.com"
+        openGraph={{
+          url: 'https://www.dogparkdissidents.com',
+          title: 'Dog Park Dissidents',
+          description:
+            'Queer punk rock in puppy hoods from New Orleans, Long Island, and Philadelphia',
+          images: [
+            {
+              url: 'https://www.dogparkdissidents.com/img/DPD-color-photo.jpg',
+              width: 3773,
+              height: 2515,
+              alt: 'Dog Park Dissidents band photo',
+            },
+            {
+              url: 'https://www.dogparkdissidents.com/img/DPD-Bw-photo.jpg',
+              width: 4045,
+              height: 2697,
+              alt: 'Dog Park Dissidents band photo',
+            },
+          ],
+          site_name: 'Dog Park Dissidents',
+        }}
+        twitter={{
+          handle: '@DogParkDsdnts',
+          cardType: 'summary_large_image',
+        }}
+      />
       <Head>
         <title>Dog Park Dissidents</title>
         <meta name="description" content="Queer punk rock in puppy hoods" />
