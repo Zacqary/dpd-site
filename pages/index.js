@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { useRouter } from 'next/router';
 
 import Head from 'next/head';
 import Image from 'next/future/image';
