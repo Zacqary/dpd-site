@@ -377,7 +377,9 @@ export default function Home({ hash }) {
             </p>
             <h3>Label</h3>
             <p>
-              <a href="https://www.say-10.com">Say-10 Records</a> •{' '}
+              <a href="https://www.say-10.com">Say-10 Records</a>
+            </p>
+            <p>
               <a href="mailto:adam@say-10.com">adam@say-10.com</a>
             </p>
           </div>
