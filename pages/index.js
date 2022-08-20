@@ -265,12 +265,13 @@ export default function Home({ hash }) {
 
             <Socials className={styles.socials} hideNonMusic />
             <iframe
-              src="https://open.spotify.com/embed/artist/3n7gyeQTlIwleoJFpOIMFp?utm_source=generator&theme=0"
               width="100%"
-              height="380"
+              height="500"
+              src="https://www.youtube.com/embed/videoseries?list=PLjfQ6SmoWEL7Kuu3obc6eB1_m5Yt3J3bD"
+              title="YouTube video player"
               frameBorder="0"
-              allowFullScreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             ></iframe>
           </div>
         </section>
