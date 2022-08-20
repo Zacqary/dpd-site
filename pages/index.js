@@ -28,13 +28,14 @@ import molotovHoodie from '../public/img/MolotovHoodie.jpg';
 import Socials from '../components/socials';
 import useIsInViewport from '../components/useIsInViewport';
 
-const scrollRoutes = ['about', 'music', 'merch', 'shows'];
+const scrollRoutes = ['about', 'music', 'merch', 'shows', 'contact'];
 
 export default function Home({ hash }) {
   const [aboutRef, isAboutInViewport] = useIsInViewport();
   const [musicRef, isMusicInViewport] = useIsInViewport();
   const [merchRef, isMerchInViewport] = useIsInViewport();
   const [showsRef, isShowsInViewport] = useIsInViewport();
+  const [contactRef, isContactInViewport] = useIsInViewport();
   const [currentHash, setCurrentHash] = useState(hash);
   const hashRef = useRef(hash);
   const scrollLock = useRef(false);
@@ -67,7 +68,13 @@ export default function Home({ hash }) {
   useEffect(() => {
     if (scrollLock.current) return;
 
-    const states = [isAboutInViewport, isMusicInViewport, isMerchInViewport, isShowsInViewport];
+    const states = [
+      isAboutInViewport,
+      isMusicInViewport,
+      isMerchInViewport,
+      isShowsInViewport,
+      isContactInViewport,
+    ];
     if (states.every((s) => s === false)) {
       if (hashRef.current) {
         hashRef.current = undefined;
@@ -85,7 +92,13 @@ export default function Home({ hash }) {
     }
 
     window.history.replaceState({}, '', `/${hashRef.current}`);
-  }, [isAboutInViewport, isMusicInViewport, isMerchInViewport, isShowsInViewport]);
+  }, [
+    isAboutInViewport,
+    isMusicInViewport,
+    isMerchInViewport,
+    isShowsInViewport,
+    isContactInViewport,
+  ]);
 
   return (
     <div className={styles.home}>
@@ -145,9 +158,10 @@ export default function Home({ hash }) {
             <NavLink href="merch">Merch</NavLink>
           </li>
           <li>
-            <NavLink href="shows" replace>
-              Shows
-            </NavLink>
+            <NavLink href="shows">Shows</NavLink>
+          </li>
+          <li>
+            <NavLink href="contact">Contact</NavLink>
           </li>
         </ul>
       </nav>
@@ -352,6 +366,20 @@ export default function Home({ hash }) {
               Dog Park Dissidents tour dates
             </a>
             <Script src="//widget.songkick.com/10121947/widget.js" />
+          </div>
+        </section>
+        <section className={styles.contactSection} id="contact" ref={contactRef}>
+          <div className={styles.sectionBody}>
+            <h2>Contact</h2>
+            <h3>General</h3>
+            <p>
+              <a href="mailto:info@dogparkdissidents.com">info@dogparkdissidents.com</a>
+            </p>
+            <h3>Label</h3>
+            <p>
+              <a href="https://www.say-10.com">Say-10 Records</a> •{' '}
+              <a href="mailto:adam@say-10.com">adam@say-10.com</a>
+            </p>
           </div>
         </section>
       </main>

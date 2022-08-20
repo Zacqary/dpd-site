@@ -295,6 +295,23 @@
   transform: rotate(-3deg);
 }
 
+.contactSection {
+  text-align: center;
+  min-height: 75vh;
+  background: linear-gradient(0deg, rgba(0 0 0 / 95%), rgba(0 0 0 / 25%)), url(/img/IMG_2419-2.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: bkpan ease-in-out 30s infinite;
+}
+
+.contactSection p {
+  font-size: 18pt;
+}
+
+.contactSection h2 {
+  margin-bottom: 48px;
+}
+
 .home footer {
   width: 100%;
 }
