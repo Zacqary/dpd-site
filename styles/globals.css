@@ -26,7 +26,7 @@ p a {
 nav {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 4vmax;
+  font-size: 3.5vmax;
   display: flex;
   justify-content: center;
   letter-spacing: 0.2ch;
