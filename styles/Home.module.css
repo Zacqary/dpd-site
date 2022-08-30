@@ -201,11 +201,19 @@
 }
 
 .aboutImg1 {
-  animation: fade-cycle 30s infinite;
+  animation: fade-cycle 15s infinite;
+}
+.aboutImg2 {
+  animation: fade-cycle-2 15s infinite;
 }
 .aboutImg3 {
-  animation: fade-cycle-2 30s infinite;
-  animation-delay: 11s;
+  animation: fade-cycle-3 15s infinite;
+}
+.aboutImg4 {
+  animation: fade-cycle-4 15s infinite;
+}
+.aboutImg5 {
+  animation: fade-cycle-5 15s infinite;
 }
 
 .showsSection {
@@ -370,17 +378,14 @@
   0% {
     opacity: 100%;
   }
-  50% {
+  20% {
     opacity: 100%;
   }
-  53% {
+  23% {
     opacity: 0%;
   }
   97% {
     opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
   }
 }
 
@@ -388,10 +393,73 @@
   0% {
     opacity: 0%;
   }
-  50% {
+  20% {
     opacity: 0%;
   }
-  53% {
+  23% {
+    opacity: 100%;
+  }
+  40% {
+    opacity: 100%;
+  }
+  43% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes fade-cycle-3 {
+  0% {
+    opacity: 0%;
+  }
+  40% {
+    opacity: 0%;
+  }
+  43% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  63% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes fade-cycle-4 {
+  0% {
+    opacity: 0%;
+  }
+  60% {
+    opacity: 0%;
+  }
+  63% {
+    opacity: 100%;
+  }
+  80% {
+    opacity: 100%;
+  }
+  83% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes fade-cycle-5 {
+  0% {
+    opacity: 0%;
+  }
+  80% {
+    opacity: 0%;
+  }
+  83% {
     opacity: 100%;
   }
   97% {
@@ -441,7 +509,19 @@
     width: 100%;
   }
   .aboutImg1 {
-    animation: fade-cycle 30s infinite, pan-v ease-in-out 30s infinite;
+    animation: fade-cycle 15s infinite, pan-v ease-in-out 20s infinite;
+  }
+  .aboutImg2 {
+    animation: fade-cycle-2 15s infinite, pan-v ease-in-out 15s infinite;
+  }
+  .aboutImg3 {
+    animation: fade-cycle-3 15s infinite, pan-v ease-in-out 15s infinite;
+  }
+  .aboutImg4 {
+    animation: fade-cycle-4 15s infinite, pan-v ease-in-out 6s infinite;
+  }
+  .aboutImg5 {
+    animation: fade-cycle-5 15s infinite, pan-v ease-in-out 15s infinite;
   }
 
   .aboutSection {

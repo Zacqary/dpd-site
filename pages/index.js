@@ -14,6 +14,8 @@ import neverErasedArt from '../public/img/NeverErased.jpg';
 import zacAboutPhoto from '../public/img/IMG_2485.jpg';
 import jonAboutPhoto from '../public/img/IMG_2339.jpg';
 import joeAboutPhoto from '../public/img/IMG_2625.jpg';
+import zekeAboutPhoto from '../public/img/dpdzeke.jpg';
+import skylarAboutPhoto from '../public/img/dpdskylar.jpg';
 
 import molotovTee from '../public/img/MolotovTee.jpg';
 import molotovTank from '../public/img/MolotovTank.jpg';
@@ -231,11 +233,13 @@ export default function Home({ hash }) {
                       <em>Dog Park Dissidents</em>
                     </strong>{' '}
                     are a queer punk rock band from New Orleans, Long Island, and Philadelphia.
-                    Featuring <strong>Zac Xeper</strong> (he/they, vocals),{' '}
-                    <strong>Jon Greco</strong> (he/him, guitar, vocals), and{' '}
-                    <strong>Joe Bove</strong> (he/him, bass, vocals). They bend genres, genders, and
-                    decency, blending old-school anarchist punk energy with contemporary pop punk
-                    and flamboyant low camp. <strong>Also, they are dogs.</strong>
+                    Featuring <strong>Zac Xeper</strong> (he/they, lead vocals),{' '}
+                    <strong>Jon Greco</strong> (he/him, guitar), <strong>Joe Bove</strong> (he/him,
+                    bass), <strong>Zeke Xander</strong> (they/them, drums), and{' '}
+                    <strong>Skylar Stravinsky</strong> (she/they, guitar). They bend genres,
+                    genders, and decency, blending old-school anarchist punk energy with
+                    contemporary pop punk and flamboyant low camp.{' '}
+                    <strong>Also, they are dogs.</strong>
                   </p>
                   <p className={styles.aboutP}>
                     Since releasing their breakout viral single{' '}
@@ -254,11 +258,31 @@ export default function Home({ hash }) {
                 </div>
               </div>
               <div className={styles.aboutImg}>
-                <Image alt="" src={jonAboutPhoto} width={500} height={500} />
+                <Image
+                  alt=""
+                  src={skylarAboutPhoto}
+                  className={styles.aboutImg5}
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  alt=""
+                  src={zekeAboutPhoto}
+                  className={styles.aboutImg4}
+                  width={500}
+                  height={500}
+                />
                 <Image
                   alt=""
                   src={joeAboutPhoto}
                   className={styles.aboutImg3}
+                  width={500}
+                  height={500}
+                />
+                <Image
+                  alt=""
+                  className={styles.aboutImg2}
+                  src={jonAboutPhoto}
                   width={500}
                   height={500}
                 />
