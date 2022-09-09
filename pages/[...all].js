@@ -10,5 +10,13 @@ export default function CatchAll() {
     window.location = `https://dogparkdissidents.bandcamp.com/merch/${rest.join('/')}`;
     return null;
   }
+  if (segment === 'track' && all.length > 1) {
+    window.location = `https://dogparkdissidents.bandcamp.com/track/${rest.join('/')}`;
+    return null;
+  }
+  if (segment === 'album' && all.length > 1) {
+    window.location = `https://dogparkdissidents.bandcamp.com/album/${rest.join('/')}`;
+    return null;
+  }
   return <Home hash={segment} />;
 }
