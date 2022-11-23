@@ -8,6 +8,7 @@ import instagramIcon from '../public/img/instagram.webp';
 import twitterIcon from '../public/img/twitter.webp';
 import facebookIcon from '../public/img/facebook.webp';
 import say10Icon from '../public/img/say10.webp';
+import mastodonIcon from '../public/img/mastodon.webp';
 
 export default function Socials({ className, hideNonMusic = false }) {
   return (
@@ -34,6 +35,9 @@ export default function Socials({ className, hideNonMusic = false }) {
           </a>
           <a href="https://www.twitter.com/dogparkdsdnts" target="_new">
             <Image alt="Twitter" src={twitterIcon} height={60} width={60} />
+          </a>
+          <a href="https://mastodon.lol/@DogParkDissidents" rel="me" target="_new">
+            <Image alt="Mastodon" src={mastodonIcon} height={60} width={60} />
           </a>
           <a href="https://www.facebook.com/dogparkdissidents" target="_new">
             <Image alt="Facebook" src={facebookIcon} height={60} width={60} />
