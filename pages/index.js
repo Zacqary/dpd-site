@@ -10,6 +10,7 @@ import dpdBWPhoto from '../public/img/DPD-Bw-photo.jpg';
 import dpdTextLogo from '../public/img/DPDTextLogo.png';
 import acabAlbumArt from '../public/img/ACAB-Art.jpg';
 import neverErasedArt from '../public/img/NeverErased.jpg';
+import giftWrapArt from '../public/img/GiftWrap-web.jpg';
 
 import zacAboutPhoto from '../public/img/IMG_2485.jpg';
 import jonAboutPhoto from '../public/img/IMG_2339.jpg';
@@ -173,6 +174,20 @@ export default function Home({ hash }) {
             <h2>Out Now</h2>
             <div className={styles.albumGrid}>
               <column>
+                <a href="https://dogparkdissidents.bandcamp.com/track/gift-wrap" target="_new">
+                  <Image alt="" src={giftWrapArt} width={500} height={500} />
+                </a>
+                <h3>Gift Wrap</h3>
+                <p>The festive and snarling new holiday single from Dog Park Dissidents</p>
+                <a
+                  className={styles.buttonLink}
+                  href="https://dogparkdissidents.bandcamp.com/track/gift-wrap"
+                  target="_new"
+                >
+                  Listen Now
+                </a>
+              </column>
+              <column>
                 <a
                   href="https://dogparkdissidents.bandcamp.com/album/acab-for-cutie-ep"
                   target="_new"
@@ -198,7 +213,8 @@ export default function Home({ hash }) {
                   Listen Now
                 </a>
               </column>
-              <column>
+
+              {/* <column>
                 <a href="https://www.say-10.com/store/never-erased-compilation/" target="_new">
                   <Image alt="" src={neverErasedArt} width={500} height={500} />
                 </a>
@@ -217,7 +233,7 @@ export default function Home({ hash }) {
                 >
                   Listen &amp; Order
                 </a>
-              </column>
+              </column> */}
             </div>
           </div>
         </section>
