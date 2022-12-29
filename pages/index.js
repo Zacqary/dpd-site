@@ -6,7 +6,7 @@ import Image from 'next/future/image';
 import Script from 'next/script';
 import styles from '../styles/Home.module.css';
 
-import dpdBWPhoto from '../public/img/DPD-Bw-photo.jpg';
+import bandPhoto from '../public/img/BandPhoto2023-web.jpg';
 import dpdTextLogo from '../public/img/DPDTextLogo.png';
 import acabAlbumArt from '../public/img/ACAB-Art.jpg';
 import neverErasedArt from '../public/img/NeverErased.jpg';
@@ -116,6 +116,12 @@ export default function Home({ hash }) {
             'Queer punk rock in puppy hoods from New Orleans, Long Island, and Philadelphia',
           images: [
             {
+              url: 'https://www.dogparkdissidents.com/img/BandPhoto2023-web.jpg',
+              width: 2628,
+              height: 1746,
+              alt: 'Dog Park Dissidents band photo',
+            },
+            {
               url: 'https://www.dogparkdissidents.com/img/DPD-color-photo.jpg',
               width: 3773,
               height: 2515,
@@ -145,7 +151,7 @@ export default function Home({ hash }) {
           <Image alt="Dog Park Dissidents" src={dpdTextLogo} />
         </h1>
         <section>
-          <Image alt="" src={dpdBWPhoto} className={styles.coverimg} />
+          <Image alt="" src={bandPhoto} className={styles.coverimg} />
         </section>
         <Socials className={styles.headerSocials} />
       </header>
